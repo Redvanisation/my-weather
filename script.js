@@ -8,12 +8,12 @@ $(document).ready(function() {
 
 	//Creating an object of dynamic wallpapers of the app:
 	var wallpapers = {
-		clearSky: "http://www.wallpaperbetter.com/wallpaper/1024/879/794/landscape-simple-nature-moon-mountain-snowy-peak-clear-sky-1080P-wallpaper.jpg",
-		clouds: "http://c1.peakpx.com/wallpaper/845/799/642/after-the-storm-dark-clouds-clouds-wallpaper.jpg",
-		rain: "http://www.ehowzit.co.za/wp-content/uploads/2016/07/rainy-weather.jpg",
-		thunderstorm: "https://wallpaperdownload.xyz/wp-content/uploads/2017/01/thunderstorm-live-wallpaper.jpg",
-		snow: "http://hddesktopwallpapers.in/wp-content/uploads/2015/07/snow-wallpaper-sunrise.jpg",
-		mist: "http://eskipaper.com/images/fog-wallpaper-8.jpg"
+		clearSky: "imgs/clearSky.jpg",
+		clouds: "imgs/clouds.jpg",
+		rain: "imgs/rain.jpg",
+		thunderstorm: "imgs/thunderstorm.jpg",
+		snow: "imgs/snow.jpg",
+		mist: "imgs/mist.jpg"
 	}
 
 	// creating the convertion to fahrenheit and to celsius functions:
