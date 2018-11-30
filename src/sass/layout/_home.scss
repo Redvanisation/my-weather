@@ -1,0 +1,114 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(black, .5);
+    position: fixed;
+    margin-top: 0;
+    z-index: 0;
+}
+
+.main-section {
+    width: 100%;
+    // border: 1px solid green;
+    position: relative;
+    padding-top: 1rem;
+
+    &__bg-video {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    &__header {
+        width: 80%;
+        // border: 1px solid red;
+        margin: 0 auto;
+        text-align: center;
+        background-color: purple;
+        color: white;
+        z-index: 1;
+        // margin-top: 2rem;
+    }
+
+    &__weather-button {
+        width: 100%;
+        text-align: center;
+        @include absCenter;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    &__content {
+        // border: 1px solid blue;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5rem 10rem;
+        background-color: rgba(orange, .5);
+        color: white;
+        position: relative;
+        z-index: 1;
+
+        &--div {
+            padding: 2rem 0;
+        }
+
+        &--btns{
+            margin: 2rem;
+        }
+
+        &--btn {
+            display: inline-block;
+            padding: 2rem 3rem;
+            border: 2px solid black;
+            border-radius: 3px;
+            transition: all .4s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        &--btn-false {
+            display: none;
+        }
+    }
+}
+
+.footer {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: .5rem 0;
+    z-index: 1;
+
+    &__text {
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                display: inline-block;
+                transition: all .3s;
+                margin: 0 .5rem;
+        
+                &:hover {
+                    transform: rotate(2deg) scale(1.1);
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.hidden {
+    display: none;
+    transition: all .5s;
+}

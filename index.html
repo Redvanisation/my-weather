@@ -1,33 +1,43 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" >
-	<meta name="viewport" content="width=device-width, initial-scare=1.0">    
-	<title>The Weather App</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">  
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>My Weather</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">  
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">   -->
+	<link rel="stylesheet" type="text/css" href="dist/css/main.comp.css">
 </head>
-<body>
-	<main>
-		<div id="weather-div">
-			<header>
-		     <h1>The Weather App</h1>
-	    </header>
-      <p id="location"></p>
-			<p id="degree"></p>
-			<img alt="weather" id="icon">
-			<p id="weather"></p>
-			<p id="description"></p>
-
-			<button class="weather-btn" id="cel"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Celsius </button>
-			<button class="weather-btn" id="fah"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Fahrenheit </button>
+<body onload=start()>
+	<div class="bg"></div>
+	
+	<section class="main-section" id="main-section">
+		<video autoplay muted loop id="bg-video" class="main-section__bg-video">
+		</video>
+		<header class="main-section__header">
+		     <h1 class="main-section__header--h1">My Weather</h1>
+			</header>
+		<div class="main-section__weather-button">
+			<button class="main-section__content--btn" id="get-weather">Get Weather</button>
 		</div>
-	</main>
-	<footer>
-		<p>Made by <a href="https://github.com/Redvanisation" target="_blank">Redvanisation</a> 2018</p>
+		<main class="main-section__content" id="weather-div">
+      		<div class="main-section__content--div" id="location"></div>
+			<div class="main-section__content--div" id="degree"></div>
+			<!-- <img alt="weather-icon" id="icon"> -->
+			<div class="main-section__content--div" id="weather"></div>
+			<div class="main-section__content--div" id="description"></div>
+
+			<div class="main-section__content--btns ">
+				<button class="main-section__content--btn hidden" id="cel"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Celsius </button>
+				<button class="main-section__content--btn hidden" id="fah"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Fahrenheit </button>
+			</div>
+		</main>
+	</section>
+	<footer class="footer">
+		<p class="footer__text">Made by <a href="https://github.com/Redvanisation" target="_blank" class="footer__text--link">Redvanisation</a> 2018</p>
 	</footer>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <script type="text/javascript" src="src/js/main.js"></script>
 </body>
 </html>

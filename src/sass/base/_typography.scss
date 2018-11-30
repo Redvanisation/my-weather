@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-section {
+
+    &__header {
+
+        
+
+        &--h1 {
+            font-size: 6rem;
+            text-transform: uppercase;
+            line-height: 2;
+            letter-spacing: .5rem;
+            font-weight: 200;
+        }
+    }
+
+    &__content {
+
+
+        &--div {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            font-weight: 200;
+        }
+
+        &--btn {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2;
+            font-weight: 200;
+        }
+    }
+}
+
+.footer {
+
+    &__text {
+        font-size: 1.5rem;
+        font-weight: 200;
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: gray;
+                letter-spacing: 2;
+            }
+
+
+        }
+    }
+}

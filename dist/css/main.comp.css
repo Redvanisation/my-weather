@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.main-section__header--h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: .5rem;
+  font-weight: 200; }
+
+.main-section__content--div {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 200; }
+
+.main-section__content--btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2;
+  font-weight: 200; }
+
+.footer__text {
+  font-size: 1.5rem;
+  font-weight: 200; }
+  .footer__text--link, .footer__text--link:link, .footer__text--link:visited {
+    text-decoration: none;
+    color: gray;
+    letter-spacing: 2; }
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  margin-top: 0;
+  z-index: 0; }
+
+.main-section {
+  width: 100%;
+  position: relative;
+  padding-top: 1rem; }
+  .main-section__bg-video {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; }
+  .main-section__header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    z-index: 1; }
+  .main-section__weather-button {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+    z-index: 2; }
+  .main-section__content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 10rem;
+    background-color: rgba(255, 165, 0, 0.5);
+    color: white;
+    position: relative;
+    z-index: 1; }
+    .main-section__content--div {
+      padding: 2rem 0; }
+    .main-section__content--btns {
+      margin: 2rem; }
+    .main-section__content--btn {
+      display: inline-block;
+      padding: 2rem 3rem;
+      border: 2px solid black;
+      border-radius: 3px;
+      transition: all .4s; }
+      .main-section__content--btn:hover {
+        background-color: black;
+        color: white; }
+    .main-section__content--btn-false {
+      display: none; }
+
+.footer {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: lightgray;
+  padding: .5rem 0;
+  z-index: 1; }
+  .footer__text--link, .footer__text--link:link, .footer__text--link:visited {
+    display: inline-block;
+    transition: all .3s;
+    margin: 0 .5rem; }
+    .footer__text--link:hover, .footer__text--link:link:hover, .footer__text--link:visited:hover {
+      transform: rotate(2deg) scale(1.1); }
+
+.hidden {
+  display: none;
+  transition: all .5s; }

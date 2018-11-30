@@ -1,12 +1,14 @@
 {
   "name": "my-weather",
   "version": "1.1.0",
-  "description": "Check online weather based on your location",
+  "description": "Check your weather online based on your location",
   "main": "script.js",
   "scripts": {
-    "build:js": "babel src/js -d dist/js",
     "build:js": "babel --presets es2015 src/js -d dist/js",
     "watch:sass": "node-sass src/sass/main.scss dist/css/main.comp.css -w"
+
+
+
   },
   "repository": {
     "type": "git",
