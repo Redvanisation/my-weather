@@ -15,6 +15,11 @@ const description = document.querySelector('#description');
 const celsius = document.querySelector('#cel');
 const fahrenheit = document.querySelector('#fah');
 
+
+//DECLARING THE MAIN VARIABLES: 
+let latitude;
+let longitude;
+
 // FUNCTIONS:
 
 // FUNCTION TO CONVERT CELCIUS TO FAHRENHEIT
@@ -32,19 +37,20 @@ const weatherCall = (lat, long) => {
 
 // FUNCTION TO SHOW THE WEATHER DETAILS ON THE SCREEN:
 const getWeather = (loc, deg, wth, desc, name, country, temp, weather, theDescription) => {
-    loc.innerHTML = `${name} ${country}`;
-    deg.innerHTML = `${Math.floor(temp)} C`;
+    loc.innerHTML = `<span class="main-section__content--elm-black">${name}</span>, <span class="main-section__content--elm-white">${country}</span>`;
+    deg.innerHTML = `<span class="main-section__content--degg"><span class="main-section__content--elm-black main-section__content--degree">${Math.floor(temp)} </span><span class="main-section__content--elm-white main-section__content--degree">C</span></span>`;
     // ic.setAttribute( 'src', `${icon}`);
-    wth.innerHTML = `${weather}`;
-    desc.innerHTML = `${theDescription}`;
+    wth.innerHTML = `<span class="main-section__content--elm-black main-section__content--weather-status">${weather}</span>`;
+    desc.innerHTML = `<span class="main-section__content--elm-white main-section__content--description">${theDescription}</span>`;
 }
 
 
 // STARTING THE SCRIPT AFTER THE BODY LOADS IN HTML:
 const start = () => {
     
-    // GETTING THE GET WEATHER STARTER BUTTON:
+    // GETTING THE GET WEATHER STARTER BUTTON & TEXT:
     const weatherBtn = document.querySelector('#get-weather');
+    const starterText = document.querySelector('#starter-text');
 
     // DEFINING WHAT WILL HAPPEN AFTER CLICKING THE GET WEATHER BUTTON:
     weatherBtn.addEventListener('click', () => {
@@ -118,13 +124,13 @@ const start = () => {
                         
                         // CONVERTING THE SHOWEN VALUE ON THE SCREEN WHEN THE CONVERTION BUTTON IS CLICKED:
                         fahrenheit.addEventListener('click', () => {
-                            degree.innerHTML = `${Math.floor(tempF)} F`;
+                            degree.innerHTML = `<span class="main-section__content--elm-black main-section__content--degree">${Math.floor(tempF)} </span><span class="main-section__content--elm-white main-section__content--degree">F</span>`;
                             fahrenheit.classList.toggle('hidden');
                             celsius.classList.toggle('hidden');
                         });
 
                         celsius.addEventListener('click', () => {
-                            degree.innerHTML = `${Math.floor(tempC)} C`;
+                            degree.innerHTML = `<span class="main-section__content--elm-black main-section__content--degree">${Math.floor(tempC)} </span><span class="main-section__content--elm-white main-section__content--degree">C</span>`;
                             celsius.classList.toggle('hidden');
                             fahrenheit.classList.toggle('hidden');
                         });
@@ -137,6 +143,7 @@ const start = () => {
             alert("Failed to get the location, please refresh the page pressing 'F5' and allow the navigator to get your location");
         }
         weatherBtn.classList.toggle("hidden");
+        starterText.classList.toggle('hidden');
     });
 
 

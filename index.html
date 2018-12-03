@@ -5,7 +5,7 @@
 	<title>My Weather</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">  
 	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">   -->
-	<link rel="stylesheet" type="text/css" href="dist/css/main.comp.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
 <body onload=start()>
 	<div class="bg"></div>
@@ -14,30 +14,36 @@
 		<video autoplay muted loop id="bg-video" class="main-section__bg-video">
 		</video>
 		<header class="main-section__header">
-		     <h1 class="main-section__header--h1">My Weather</h1>
-			</header>
-		<div class="main-section__weather-button">
-			<button class="main-section__content--btn" id="get-weather">Get Weather</button>
-		</div>
-		<main class="main-section__content" id="weather-div">
-      		<div class="main-section__content--div" id="location"></div>
-			<div class="main-section__content--div" id="degree"></div>
-			<!-- <img alt="weather-icon" id="icon"> -->
-			<div class="main-section__content--div" id="weather"></div>
-			<div class="main-section__content--div" id="description"></div>
-
-			<div class="main-section__content--btns ">
-				<button class="main-section__content--btn hidden" id="cel"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Celsius </button>
-				<button class="main-section__content--btn hidden" id="fah"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Fahrenheit </button>
+		     <h1 class="main-section__header--h1">&nbsp;My Weather</h1>
+		</header>
+			<div class="main-section__content-container">
+			<div class="main-section__weather-button">
+				<h2 class="main-section__weather-button-text" id="starter-text">
+					Please Click bellow and allow the localisation
+				</h2>
+				<button class="main-section__content--btn" id="get-weather">Get Weather</button>
 			</div>
-		</main>
+			<main class="main-section__content" id="weather-div">
+				<div class="main-section__content--div" id="location"></div>
+				<div class="main-section__content--div" id="degree"></div>
+				<!-- <img alt="weather-icon" id="icon"> -->
+				<div class="main-section__content--div" id="weather"></div>
+				<div class="main-section__content--div" id="description"></div>
+
+				<div class="main-section__content--btns ">
+					<button class="main-section__content--btn hidden" id="cel"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Celsius </button>
+					<button class="main-section__content--btn hidden" id="fah"><i class="fa fa-thermometer-half icon" aria-hidden="true"></i> Fahrenheit </button>
+				</div>
+			</main>
+		
+			<footer class="footer">
+				<p class="footer__text">Made by <a href="https://github.com/Redvanisation" target="_blank" class="footer__text--link">Redvanisation</a> 2018</p>
+			</footer>
+		</div>
 	</section>
-	<footer class="footer">
-		<p class="footer__text">Made by <a href="https://github.com/Redvanisation" target="_blank" class="footer__text--link">Redvanisation</a> 2018</p>
-	</footer>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
-    <script type="text/javascript" src="src/js/main.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
 </body>
 </html>
