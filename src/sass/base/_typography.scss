@@ -1,0 +1,174 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-section {
+
+    &__weather-button-text {
+        display: block;
+        text-transform: uppercase;
+        color: $color-green;
+        padding: 0 0 2rem 0;
+    }
+
+    &__header {
+
+        &--h1 {
+            font-size: 6rem;
+            text-transform: uppercase;
+            line-height: 2;
+            letter-spacing: 6rem;
+            font-weight: 900;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 0 2rem;
+            // text-align: center;
+
+            
+            
+            @include respond(tab-land) {
+                font-size: 4rem;
+            }
+            
+            @include respond(tab-port) {
+                font-size: 3rem;
+                letter-spacing: 3.5rem;
+            }
+            
+            @include respond(phone) {
+                font-size: 3rem;
+                letter-spacing: 2rem;
+            }
+            
+            @include respond(phone-vs) {
+                font-size: 3rem;
+                letter-spacing: 1rem;
+            }
+
+
+
+
+            
+        }
+    }
+
+    &__content {
+
+
+        &--div {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            font-weight: 600;
+
+            @include respond(tab-port) {
+                letter-spacing: .5rem;
+                font-size: 2rem;
+            }
+
+        }
+
+        &--elm-black {
+            color: $color-green;
+            font-size: 4.5rem;
+            font-weight: 900;
+
+            @include respond(tab-port) {
+                font-size: 2.88rem;
+            }
+
+            @include respond(phone-vs) {
+                font-size: 2.3rem;
+            }
+        }
+
+        &--elm-white {
+            font-weight: 800;
+            font-size: 4rem;
+
+            @include respond(tab-port) {
+                font-size: 3rem;
+            }
+
+            @include respond(phone-vs) {
+                font-size: 2rem;
+            }
+        }
+
+        
+        &--degree {
+            font-size: 7rem;
+
+            @include respond(tab-port) {
+                font-size: 5rem;
+            }
+
+            @include respond(phone-vs) {
+                font-size: 4rem;
+            }
+        }
+        
+        &--weather-status {
+            font-size: 3.5rem;
+            font-weight: 500;
+
+            @include respond(tab-port) {
+                font-size: 3rem;
+            }
+
+            @include respond(phone-vs) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &--description {
+            font-size: 2rem;
+            font-weight: 300;
+
+            @include respond(tab-port) {
+                font-size: 1.5rem;
+            }
+
+            @include respond(phone-vs) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &--btn {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2;
+            font-weight: 200;
+            color: $color-green;
+
+            @include respond(phone) {
+                font-size: 1.3rem;
+            }
+
+            @include respond(phone-vs) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.footer {
+
+    &__text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $color-white;
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $color-dark-blue;
+                letter-spacing: 2;
+            }
+
+
+        }
+    }
+}
