@@ -70,39 +70,46 @@ const start = () => {
                     // IMPLIMENTING A CONTROL FLOW SWITCH TO SHOW BACKGROUND VIDEOS DEPENDING ON THE WEATHER STATE:
                     switch (res.weather[0].main) {
                         case "Clear":
-                        video.setAttribute('src', '../../videos/clearSky.mp4');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/clearSky.mp4">
+                            `;
+                            break;
                         case "Clouds":
-                        video.setAttribute('src', '../../videos/coulds1.mp4');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/coulds1.mp4">
+                            `;
+                            break;
                         case "Few Clouds":
-                        video.setAttribute('src', '../../videos/partlyCloudy/MP4/partlyCloudy.mp4');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/partlyCloudy/MP4/partlyCloudy.mp4">
+                            `;
+                            break;
                         case "Scattered Clouds":
-                        video.setAttribute('src', '../../videos/partlyCloudy/MP4/partlyCloudy.mp4');		
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/partlyCloudy/MP4/partlyCloudy.mp4">`;
+                            break;
                         case "Broken Clouds":
-                        video.setAttribute('src', '../../videos/partlyCloudy/MP4/partlyCloudy.mp4');		
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/partlyCloudy/MP4/partlyCloudy.mp4">`;
+                            break;
                         case "Rain":
-                        video.setAttribute('src', '../../videos/rain/WEBM/rain.webm');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/rain/WEBM/rain.webm">`;
+                            break;
                         case "Shower Rain":
-                        video.setAttribute('src', '../../videos/rain/WEBM/rain.webm');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/rain/WEBM/rain.webm">
+                            `;
+                            break;
                         case "Thunderstorm":
-                        video.setAttribute('src', '../../videos/thunder.mp4');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/thunder.mp4">
+                            `;
+                            break;
                         case "Snow":
-                        video.setAttribute('src', '../../videos/snow/snow.mp4');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/snow/snow.mp4">
+                            `;
+                            break;
                         case "Mist":
-                        video.setAttribute('src', '../../videos/fog.mp4');
-                        break;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/fog.mp4">
+                            `;
+                            break;
                         default:
-                        video.setAttribute('src', '../../videos/clearSky.mp4');
-                        break;
-                        }
+                            video.innerHTML = `<source src="#">`;
+                            break;
+                    }
 
                         // STORING WEATHER INFORMATIONS IN VARIABLES
                         let name = res.name;
