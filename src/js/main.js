@@ -70,40 +70,40 @@ const start = () => {
                     // IMPLIMENTING A CONTROL FLOW SWITCH TO SHOW BACKGROUND VIDEOS DEPENDING ON THE WEATHER STATE:
                     switch (res.weather[0].main) {
                         case "Clear":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/clearSky.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/clearSky.mp4">
                             `;
                             break;
                         case "Clouds":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/coulds1.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/coulds1.mp4">
                             `;
                             break;
                         case "Few Clouds":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/partlyCloudy/MP4/partlyCloudy.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/partlyCloudy.mp4">
                             `;
                             break;
                         case "Scattered Clouds":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/partlyCloudy/MP4/partlyCloudy.mp4">`;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/partlyCloudy.mp4">`;
                             break;
                         case "Broken Clouds":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/partlyCloudy/MP4/partlyCloudy.mp4">`;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/partlyCloudy.mp4">`;
                             break;
                         case "Rain":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/rain/WEBM/rain.webm">`;
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/rain.mp4">`;
                             break;
                         case "Shower Rain":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/rain/WEBM/rain.webm">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/rain.mp4">
                             `;
                             break;
                         case "Thunderstorm":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/thunder.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/thunder.mp4">
                             `;
                             break;
                         case "Snow":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/snow/snow.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/snow.mp4">
                             `;
                             break;
                         case "Mist":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/fog.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/fog.mp4">
                             `;
                             break;
                         default:
