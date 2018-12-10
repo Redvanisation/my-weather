@@ -101,7 +101,7 @@ var start = function start() {
                             `;
                             break;
                         case "Snow":
-                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/snow/snow.mp4">
+                            video.innerHTML = `<source src="https://redvanisation.github.io/my-weather/videos/compressed/snow.mp4">
                             `;
                             break;
                         case "Mist":
